@@ -1,0 +1,20 @@
+<template name="DisplaySearchSellerName">
+	<section class="output">
+		{{#if Template.subscriptionsReady}}
+			<br><br><h2>Here are your products:</h2><br>
+			{{#each sellerproducts}}
+				<br><li><b>{{title}}</b></li><br>
+    			<br><li><b>{{seller}}</b></li><br>
+    			<br><li>{{details}}</li><br>
+    			<br><li>{{price}}</li><br>
+    			<br><li>Halal: {{Halalapproved}}</li><br>
+    			<br><li>Vegan: {{Veganapproved}}</li><br>
+    			<br><li>Vegetarian: {{Vegetarianapproved}}</li><br>
+    			<br><li>Search Tags: {{tags}}</li><br>
+			{{/each}}
+			<h4 style="padding:20px;">End of your products</h4>
+		{{else}}
+			<br><br><h4>Loading your products...</h4>
+		{{/if}}
+	</section>
+</template>

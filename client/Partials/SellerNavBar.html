@@ -1,0 +1,160 @@
+<template name="SellerNavBar">
+  <main>
+    <head>
+    <style>
+    body {font-family: Arial, Helvetica, Lucida Calligraphy, sans-serif;}
+
+/*.loginButtons {
+    padding:0px;
+    float:middle;
+    background-color: #4CAF50;
+  }*/
+  
+a:hover{
+  color:#228B22;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background-color: #4CAF50;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) to #FFFFFF (white) on hover */
+li a:hover {
+    background-color: #FFFFFF;
+}
+
+/* Add a gray right border to all list items, except the last item (last-child) */
+li {
+    border-right: 1px solid #fff;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a, .navbarDropdown {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+li a:hover, .navbarDropdown:hover .dropbtn {
+    background-color: white;
+}
+
+li.dropdown-menu {
+    display: inline-block;
+}
+
+.dropdown-item {
+    display: none;
+    position: absolute;
+    background-color: #fefefe;
+    opacity: 0.8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-item a {
+    color: white;
+    padding: 20px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-item a:hover {
+    background-color: #000000;
+    opacity: 0.8
+}
+
+.dropdown:hover .dropdown-item {
+    display: block;
+    /*display: inline;*/
+}
+
+.container {
+  background-color: #4CAF50;
+  color: #4CAF50;
+}
+
+</style>
+</head>
+
+
+
+<main class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/Seller-Home" style="background-color: #4CAF50">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #4CAF50">
+          Halal
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item"  href="/seller-halal-snacks">Snacks</a>
+          <div class="dropdown-divider"></div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #4CAF50">
+          Vegan
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/seller-vegan-snacks">Snacks</a>
+          <div class="dropdown-divider"></div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #4CAF50">
+          Vegetarian
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/seller-vegetarian-snacks">Snacks</a>
+          <div class="dropdown-divider"></div>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/Seller-Policy" style="background-color: #4CAF50">Policy <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/Add-to-My-Products" style="background-color: #4CAF50">Add to My Products <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/My-Products" style="background-color: #4CAF50">My Products <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/Search" style="background-color: #4CAF50">Search <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</main>
+  </main>
+</template>

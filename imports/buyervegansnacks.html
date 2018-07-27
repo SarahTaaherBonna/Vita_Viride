@@ -1,0 +1,14 @@
+<template name="buyervegansnacks">
+  {{#each Veganproducts}}
+  		<br>
+    	<br><li><b>{{title}}</b></li><br>
+    	<br><li>{{details}}</li><br>
+    	<br><li><b>{{seller}}</b></li><br>
+    	<br><li>{{price}}</li><br>
+    	<br><li>Halal: {{Halalapproved}}</li><br>
+    	<br><li>Vegan: {{Veganapproved}}</li><br>
+    	<br><li>Vegetarian: {{Vegetarianapproved}}</li><br>
+    	<br><li>Search Tags: {{tags}}</li><br>
+  {{/each}}
+
+</template>
