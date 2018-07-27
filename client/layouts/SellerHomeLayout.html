@@ -106,6 +106,14 @@
         'Thanks for logging in, ' + response.name + '!';
     });
   }
+
+  function fbLogout() {
+        FB.logout(function (response) {
+            //Do what ever you want here when logged out like reloading the page
+            window.location.reload();
+        });
+    }
+
 </script>
 
 <!--
@@ -116,6 +124,8 @@
 
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
+
+<span id="fbLogout" onclick="fbLogout()"><a class="fb_button fb_button_medium"><span class="fb_button_text" style="float:left">Logout</span></a></span>
 
 <div id="status">
 </div>
