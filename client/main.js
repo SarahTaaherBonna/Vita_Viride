@@ -1,4 +1,8 @@
 import '../lib/routes.js';
+import '../client/layouts/BuyerHomeLayout.html';
+import '../client/layouts/BuyerMainLayout.html';
+import '../client/layouts/SellerHomeLayout.html';
+import '../client/layouts/SellerMainLayout.html';
 import '../imports/buyerhalalsnacks.html';
 import '../imports/buyervegansnacks.html';
 import '../imports/buyervegetariansnacks.html';

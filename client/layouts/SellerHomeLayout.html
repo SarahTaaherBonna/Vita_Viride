@@ -1,6 +1,6 @@
 <template name="SellerHomeLayout">
 	<header>
-		<h1>Welcome to <a href="https://imgur.com/Hfcw05A"><img src="https://i.imgur.com/Hfcw05A.png" title="source: imgur.com" style="width:70px;height:70px;"/></a></h1>
+		<h1>Welcome to <a href="https://imgur.com/Hfcw05A"><img src="https://i.imgur.com/Hfcw05A.png" title="source: imgur.com" style="width:70px;height:70px;"/></a> Seller Page!</h1>
 	</header>
 	{{> SellerNavBar}}
 	<!-- {{> loginButtons align="right"}} -->
@@ -9,28 +9,6 @@
 	</main>
 	<body>
 		{{> SellerMarketplaceDisplay}}
-
-<!-- <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '751346278589892',
-      cookie     : true,
-      xfbml      : true,
-      version    : 'v3.0'
-    });
-      
-    FB.AppEvents.logPageView();   
-      
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script> -->
 
 <script>
   // This is called with the results from from FB.getLoginStatus().
@@ -121,12 +99,11 @@
   the JavaScript SDK to present a graphical Login button that triggers
   the FB.login() function when clicked.
 -->
-<br><br>
-<br><br>
+
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
 
-<span id="fbLogout" onclick="fbLogout()"><a class="fb_button fb_button_medium"><span class="fb_button_text" style="float:right">Logout</span></a></span>
+<span id="fbLogout" onclick="fbLogout()"><a class="fb_button fb_button_medium"><span class="fb_button_text" style="float:left">Logout</span></a></span>
 
 <div id="status">
 </div>
@@ -135,6 +112,7 @@
 </template>
 
 <template name="SellerMarketplaceDisplay">
+  <br><br>
   <br><br>
   {{#each products}}
     <br><li><b>{{title}}</b></li><br>
