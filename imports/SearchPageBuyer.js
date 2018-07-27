@@ -4,18 +4,18 @@ import { Session } from 'meteor/session';
 import { Products } from '../Collections/Products.js';
 import { Carts } from '../Collections/Carts.js';
 
-import './SearchPage.html';
+import './SearchPageBuyer.html';
 
 if(Meteor.isClient) {
 
-	Template.SearchPage.onCreated(function() {
+	Template.SearchPageBuyer.onCreated(function() {
 		var self = this;
 		self.autorun(function() {
 			self.subscribe('products');
 		})
 	});
 
-	Template.SearchPage.events({
+	Template.SearchPageBuyer.events({
 		'submit.Search Tags'(event) {
 			event.preventDefault();
 		},

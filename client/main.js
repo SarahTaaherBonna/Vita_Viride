@@ -13,7 +13,8 @@ import '../imports/MyProductsPage.html';
 import '../imports/DisplaySearchUsername.html';
 import '../imports/DisplaySearchSellerName.html';
 import '../imports/DisplaySearchPage.html'
-import '../imports/SearchPage.html';
+import '../imports/SearchPageBuyer.html';
+import '../imports/SearchPageSeller.html';
 
 import { Products } from '../Collections/Products.js';
 import { Carts } from '../Collections/Carts.js';
@@ -32,7 +33,8 @@ import '../imports/MyProductsPage.js';
 import '../imports/DisplaySearchUsername.js';
 import '../imports/DisplaySearchSellerName.js';
 import '../imports/DisplaySearchPage.js';
-import '../imports/SearchPage.js';
+import '../imports/SearchPageBuyer.js';
+import '../imports/SearchPageSeller.js';
 
 window.Products = Products;
 window.Carts = Carts;
