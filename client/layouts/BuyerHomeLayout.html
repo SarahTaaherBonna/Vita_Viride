@@ -3,7 +3,7 @@
 		<h1>Welcome to <a href="https://imgur.com/Hfcw05A"><img src="https://i.imgur.com/Hfcw05A.png" title="source: imgur.com" style="width:70px;height:70px;"/></a></h1>
 	</header>
 	{{> BuyerNavBar}}
-	{{> loginButtons align="right"}}
+	<!-- {{> loginButtons align="right"}} -->
 	<main>
 	 
 	</main>
@@ -84,6 +84,10 @@
       statusChangeCallback(response);
     });
 
+    FB.logout(function(response) {
+   // Person is now logged out
+});
+
   };
 
   // Load the SDK asynchronously
@@ -114,6 +118,9 @@
 -->
 
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+
+<fb:logout-button scope="public_profile,email" onlogout="checkLoginState();">
 </fb:login-button>
 
 <div id="status">
