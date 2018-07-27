@@ -6,7 +6,7 @@ import { Carts } from '../../Collections/Carts.js';
 import './BuyerHomeLayout.html';
 import './BuyerMainLayout.html';
 
-Template.HomeLayout.onCreated(function () {
+Template.BuyerHomeLayout.onCreated(function () {
   Meteor.subscribe('products');
   Meteor.subscribe('carts');
 });
