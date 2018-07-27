@@ -5,7 +5,8 @@ import { Products } from '../Collections/Products.js';
 import { Carts } from '../Collections/Carts.js';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 
-import './SearchPage.html';
+import './SearchPageBuyer.html';
+import './SearchPageSeller.html';
 import './DisplaySearchPage.html';
 
 Template.DisplaySearchPage.onCreated(function(){
