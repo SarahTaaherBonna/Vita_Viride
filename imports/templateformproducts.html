@@ -1,5 +1,17 @@
 <template name="templateformproducts">
 	<br><br>
 	<br><br>
-  {{> quickForm collection="Products" id="insertProductsForm" type="insert"}}
+	<head>
+		<style>
+			div.form {
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+	<div class="form">
+  		{{> quickForm collection="Products" id="insertProductsForm" type="insert"}}
+  	</div>
+  </body>
 </template>
