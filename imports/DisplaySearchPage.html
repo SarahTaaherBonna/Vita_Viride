@@ -1,7 +1,9 @@
 <template name="DisplaySearchPage">
 	<section class="output">
 		{{#if Template.subscriptionsReady}}
-			<br><br><h2>Here are the search results:</h2><br>
+			<br><br>
+			<br><br>
+			<h2>Here are the search results:</h2><br>
 			{{#each searchproducts}}
 				<br><li><b>{{title}}</b></li><br>
     			<br><li><b>Seller: {{seller}}</b></li><br>
@@ -14,7 +16,9 @@
 			{{/each}}
 			<h4 style="padding:20px;">End of search results</h4>
 		{{else}}
-			<br><br><h4>Loading search results...</h4>
+			<br><br>
+			<br><br>
+			<h4>Loading search results...</h4>
 		{{/if}}
 	</section>
 </template>
