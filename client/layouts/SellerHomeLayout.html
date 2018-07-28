@@ -10,7 +10,7 @@
 
   <head>
     <style>
-    
+
       div.loginlogoutbuttons {
         float:top;
       }
@@ -110,12 +110,12 @@
   the JavaScript SDK to present a graphical Login button that triggers
   the FB.login() function when clicked.
 -->
-<div class="loginlogoutbuttons"
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();" style="vertical-align:top; float:left">
 </fb:login-button>
 
-<span id="fbLogout" onclick="fbLogout()"><a class="fb_button fb_button_medium"><span class="fb_button_text" style="float:left">Logout</span></a></span>
-</div>
+<span id="fbLogout" onclick="fbLogout()"><a class="fb_button fb_button_medium"><span class="fb_button_text" style="vertical-align:top; float:left">Logout</span></a></span>
+
 
 <div id="status">
 </div>
