@@ -21,9 +21,11 @@ Template.DisplaySearchPage.helpers({
 		var tagsvar = FlowRouter.getQueryParam("tagsvar");
 		console.log(tagsvar);
 
-		tagsvar = tagsvar.split(',');
+		var tagsvarres = tagsvar.toLowerCase();
+
+		tagsvarres = tagsvarres.split(',');
 		var Productslist;
-		Productslist = Products.find({tags: {$in: tagsvar}});
+		Productslist = Products.find({tags: {$in: tagsvarres}});
 		return Productslist;
 	},
 });
