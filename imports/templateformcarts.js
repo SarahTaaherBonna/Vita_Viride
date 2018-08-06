@@ -68,6 +68,16 @@ Template.templateformcarts.onRendered(function(){
             var titleproduct = $('[name=title]').val();
             var sellerproduct = $('[name=seller]').val();
             var quantityproduct = $('[name=quantity]').val();
+            Carts.createCart({
+    			username: username,
+    			title: title,
+    			seller: seller,
+    			quantity: quantity,
+			}, function(error){
+    			if(error){
+        			console.log(error.reason);
+    			} else {}
+			});
            //  Meteor.AddtoCart(usernameproduct, titleproduct, sellerproduct, quantityproduct, function(error){
            //      if(error){
            //          validatorformcarts.showErrors({
