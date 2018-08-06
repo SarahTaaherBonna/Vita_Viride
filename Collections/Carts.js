@@ -8,21 +8,26 @@ Carts.attachSchema(new SimpleSchema({
   username: {
 		type: String,
 		label: "Username",
+		optional: false,
 	},
 
   seller: {
 		type: String,
 		label: "Seller",
+		optional: false,
 	},
 
   title: {
 		type: String,
 		label: "Title",
+		optional: false,
 	},
 
 	qty: {
 		type: Number,
 		label: "Quantity",
+		min: 1,
+		optional: false,
 	},
 
 }));
