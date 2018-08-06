@@ -9,22 +9,8 @@ Template.templateformcarts.onCreated(function () {
 });
 
 Template.templateformcarts.events({
-    'submit form': function(event){
+    'insert': function(event){
         event.preventDefault();
-        /*
-        var email = $('[name=email]').val();
-        var password = $('[name=password]').val();
-        Accounts.createUser({
-            email: email,
-            password: password
-        }, function(error){
-            if(error){
-                console.log(error.reason);
-            } else {
-                Router.go("home");
-            }
-        });
-        */
     }
 });
 
@@ -40,7 +26,7 @@ Template.templateformcarts.onRendered(function(){
             seller: {
                 required: true
             },
-            quantity: {
+            qty: {
                 required: true,
                 digits: true,
                 min: 1
@@ -56,7 +42,7 @@ Template.templateformcarts.onRendered(function(){
             seller: {
                 required: "You must enter a password."
             },
-            quantity: {
+            qty: {
                 required: "You must enter a valid number.",
                 min: "You've entered an invalid number."
             },
@@ -67,17 +53,17 @@ Template.templateformcarts.onRendered(function(){
         	var usernameproduct= $('[name=username]').val();
             var titleproduct = $('[name=title]').val();
             var sellerproduct = $('[name=seller]').val();
-            var quantityproduct = $('[name=quantity]').val();
-            Carts.createCart({
-    			username: username,
-    			title: title,
-    			seller: seller,
-    			quantity: quantity,
-			}, function(error){
-    			if(error){
-        			console.log(error.reason);
-    			} else {}
-			});
+            var quantityproduct = $('[name=qty]').val();
+   //          Carts.createCart({
+   //  			username: username,
+   //  			title: title,
+   //  			seller: seller,
+   //  			quantity: quantity,
+			// }, function(error){
+   //  			if(error){
+   //      			console.log(error.reason);
+   //  			} else {}
+			// });
            //  Meteor.AddtoCart(usernameproduct, titleproduct, sellerproduct, quantityproduct, function(error){
            //      if(error){
            //          validatorformcarts.showErrors({
