@@ -1,5 +1,12 @@
 <template name="templateformcarts">
 	<br><br>
 	<br><br>
-  {{> quickForm collection="Carts" id="insertCartsForm" type="insert"}}
+  <!-- {{> quickForm collection="Carts" id="insertCartsForm" type="insert"}} -->
+  <form class="inputcarts">
+        <p>Username: <input type="username" name="username" required></p>
+        <p>Seller: <input type="seller" name="seller" required></p>
+        <p>Title: <input type="title" name="title" required></p>
+        <p>Quantity: <input type="quantity" name="quantity" required></p>
+        <p><input type="submit" value="AddtoCart"></p>
+    </form>
 </template>
