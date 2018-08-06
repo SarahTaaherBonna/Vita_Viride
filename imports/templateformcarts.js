@@ -16,7 +16,7 @@ Template.templateformcarts.onRendered(function(){
             },
             seller: {
                 required: true
-            }
+            },
         },
         messages: {
             title: {
@@ -26,7 +26,7 @@ Template.templateformcarts.onRendered(function(){
             seller: {
                 required: "You must enter a password.",
                 seller: "You've entered an invalid seller."
-            }
+            },
         }
     });
     var validatorformcarts = $('.templateformcarts').validate({
@@ -36,10 +36,10 @@ Template.templateformcarts.onRendered(function(){
             Meteor.AddtoCart(title, seller, function(error){
                 if(error){
                     validatorformcarts.showErrors({
-        			title: title.reason
+        				title: error.reason,
         			)};
         			validatorformcarts.showErrors({
-        			seller: seller.reason
+        				seller: error.reason,
         			)};       
                 } else {}
             });
